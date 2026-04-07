@@ -1,0 +1,25 @@
+*,*::before,*::after{padding:0;margin:0;box-sizing: inherit;}html{font-size: 62.5%;}body{box-sizing: border-box;}
+body{
+display:flex;
+justify-content: center;
+align-items: center;
+gap:9rem;
+flex-direction: column;
+}
+.btn{
+outline:none;
+border:2px black dotted;
+background-color: transparent;
+border-radius: 20rem;
+background-image: linear-gradient(to right,rgba(0, 0, 0, 0.156),white);
+padding:1rem;
+cursor: pointer;
+background-size: cover;
+font-family: 'Times New Roman', Times, serif;
+transition: all .2s;
+}
+.btn:hover{
+transform: scale(1.05);
+}
+.container{border:1px black solid;border-radius: 10px;}
+/*cool stuff ^*/
