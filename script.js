@@ -11,12 +11,7 @@ btn.addEventListener('click',(e)=>{
 })
 
 function makegrid(grids){
-    while(container.hasChildNodes()){
-        const child= container.firstChild
-        container.removeChild(child)
-
-    }
-
+    container.innerHTML=""
     for (let i=0;i<grids ** 2;i++){
         const grid=document.createElement("div")
         grid.style.opacity=0
