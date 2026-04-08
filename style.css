@@ -23,3 +23,11 @@ transform: scale(1.05);
 }
 .container{border:1px black solid;border-radius: 10px;}
 /*cool stuff ^*/
+.container{
+    overflow:hidden;
+display:grid;
+margin:1rem;
+
+}
+
+
