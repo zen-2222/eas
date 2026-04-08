@@ -1,5 +1,8 @@
 const btn=document.querySelector('#btn')
 const container=document.querySelector('.container')
+let mousedown=false
+container.onmousedown = () => {mousedown=true}
+container.onmouseup = () => {mousedown=false}
 
 
 btn.addEventListener('click',(e)=>{
@@ -21,7 +24,7 @@ function makegrid(grids){
     
 }
 container.addEventListener('mouseover',(e)=>{
-        if(e.target.classList.value != "container"){ 
+        if(e.target.classList.value != "container" && mousedown){ 
             e.target.style.backgroundColor="black"
             e.target.style.opacity = (parseFloat(e.target.style.opacity) + .1)
 
